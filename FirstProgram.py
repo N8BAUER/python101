@@ -56,7 +56,7 @@ clear()
 ## // floored values output
 ## % modulo
 
-# operator precedence pemdas
+# operator precedence pemdmas
 """""
 ()
 **
@@ -79,20 +79,106 @@ clear()
 
 
 #string manipulation 
-string = 'I am a Python based hamster'
-stringI = 'I am a Python based hamster'
-string[0]
-print(string[0])
-print(string[-1])
-# len is the .length of Bredan Eich's world 
-print(len(string))
-# way slicker than substrings, slices, splices, etc. imo
-print(string[5:11])
-print(string[:27])
-# concatenation is the same, but type conversion isn't the same
-print(2 * string)
-word = "Ford"
-word = "L" + word[1:]
-print(word)
-print('word', word);
+# string = 'I am a Python based hamster'
+# stringI = 'I am a Python based hamster'
+# string[0]
+# print(string[0])
+# print(string[-1])
+# # len is the .length of Bredan Eich's world 
+# print(len(string))
+# # way slicker than substrings, slices, splices, etc. imo
+# print(string[5:11])
+# print(string[:27])
+# # concatenation is the same, but type conversion isn't the same
+# print(2 * string)
+# word = "Ford"
+# word = "L" + word[1:]
+# print(word)
+# print('word', word);
 
+# format method
+print("Today I had {0} cups of coffee {1}".format(3, "coffee"))
+print('prices: ({x}, {y}, {z})'.format(x = 2.0, y = 1.5, z = 5))
+print('The {vechicle} had {0} crashes in {1} months'.format(5, 6, vechicle = 'truck'))
+# left right align 
+print('{:<20}'.format("text"))
+print('{:>20}'.format("text"))
+# binary
+print('{:b}'.format(21))
+# hexadecimal
+print('{:x}'.format(21))
+# octal
+print('{:o}'.format(21))
+
+print('I am a string "python"')
+print('I\'m atring in "python"')
+# r 
+print(r'c:\number\nan')
+# triple quotes allow for literals
+print("""
+      I'm a 
+young lad
+      in the world of
+      'Python'
+""")
+
+# conditional operators: < > <= >= != == 
+# false 0 true 1
+# print(5 < 6)
+# print(2 == 2)
+# print(2 >=3)
+# print(4 != 1)
+# print(0 == False)
+# print(2 == True)
+# print('abc' == 'cba')
+
+"""
+priority arrangement: 
+ not 
+ and 
+ or
+"""
+a = True
+b = False
+# both conditions must be true return true
+print(a and b)
+print(b and b)
+print(a and a)
+# true for either condition results in true
+print(a or a)
+print(b or b)
+print(a or b)
+
+d = 5
+e = 1
+f = False
+g = 'python'
+h = 'some'
+z = not((not(e <= d) and (g >= h)) or f) and 1
+print(z)
+
+passerby_speech = "Hi"
+
+if passerby_speech == 'hello':
+      print("Hi")
+elif passerby_speech == 'Hi':
+      print("Hello")
+else :
+      print('Hey, whatcha doing hamster lad')
+
+if 5 >  7:
+      if 5 > 6:
+             print('5 > 6')
+      else:
+             print('5 <= 6')
+else: 
+      print(" not true!")
+
+num = 3
+
+if( num > 1 and num < 5):
+      print(num)
+elif(num > 2 and num < 4):
+      print(num+1)
+else:
+      print(num-1)
