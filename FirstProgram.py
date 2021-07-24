@@ -182,3 +182,45 @@ elif(num > 2 and num < 4):
       print(num+1)
 else:
       print(num-1)
+
+#ternary is conducted inline via conditionals
+passerby_speechI = "Hello"
+me = "Hi" if passerby_speechI == "Hello" or passerby_speechI == "Hi" else "Hey"
+print(me)
+
+a = 3
+a = 7 if 3**2 > 9 else 14
+print(a)
+
+# for loops
+# range(start, stop, step)
+# for i in range(1,10,3):
+#       print(i)
+
+# string = "String traversal"
+# for i in range(len(string)):
+#       print(string[i])
+
+# for char in string:
+#       print(char)
+
+# for i in range(3):
+#       for j in range(2):
+#             print(j)
+
+# looping a table
+for i in range(1, 11):
+      print('{:<3}|'.format(i), end="")
+
+      for j in range(1,11):
+            print('{:>4}'.format(i * j),end="")
+      if i == 1:
+            print('\n{:#^44}'.format(""),end="")
+
+      print("")
+
+#while
+condition = 10
+while condition != 0:
+      print(condition)
+      condition = condition - 1
